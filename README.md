@@ -45,7 +45,7 @@ profitableTrades := profit.Profitable(data)
 
 maxProfit := profit.MaxProfit(profitableTrades)
 
-fmt.Printf("Most profitable trade will have a profit of: %v\n", maxProfit)
+fmt.Printf("The most profitable trade will have a profit of: %v\n", maxProfit)
 ```
 
 ## Dependencies
