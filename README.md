@@ -102,3 +102,13 @@ $ go test -cover
 PASS
 coverage: 100.0% of statements
 ```
+
+# Reasoning
+
+The task was to find the most profitable trade from a series of numbers where the first value was the opening trade for the dat at 10:00 am local time and every value past that was +60mins.
+
+I decided to create two methods, one to generate a slice that would contain every profitable trade for the data set given to it and one to find the single most profitable trade.
+
+Finding the profitable trades could of been implemented into a go routine to iterate of the data in threads faster but I decided to leave it simple as the benchmarks were quite fast with the data set given and the extra complexity was not really needed. 
+
+As a bonus I added a method to calculate the profit made on all profitable trades.

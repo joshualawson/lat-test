@@ -122,3 +122,12 @@ func BenchmarkMaxProfitWithProfitable(b *testing.B) {
 
 	MaxProfit(ProfitableTrades(i))
 }
+
+// TestTotalMaxProfit tests the total profit on all possible trades
+func TestTotalMaxProfit(t *testing.T) {
+	i := []int{
+		10, 7, 5, 8, 11, 9,
+	}
+
+	assert.Equal(t, TotalMaxProfit(ProfitableTrades(i)), 25)
+}

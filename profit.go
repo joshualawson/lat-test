@@ -19,6 +19,17 @@ func MaxProfit(i [][]int) int {
 	return profit
 }
 
+// TotalMaxProfit returns the total maximum profit that
+// could of been made if all profitable trades were executed
+func TotalMaxProfit(i [][]int) int {
+	var profit int
+	for _, v := range i {
+		profit = profit + (v[1] - v[0])
+	}
+
+	return profit
+}
+
 // ProfitableTrades calulates all the trades
 // that could be profitable
 // Example Usage:
