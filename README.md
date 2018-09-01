@@ -105,7 +105,7 @@ coverage: 100.0% of statements
 
 # Reasoning
 
-The task was to find the most profitable trade from a series of numbers where the first value was the opening trade for the dat at 10:00 am local time and every value past that was +60mins.
+The task was to find the most profitable trade from a series of numbers where the first value was the opening trade for the data at 10:00 am local time and every value past that was +60mins.
 
 I decided to create two methods, one to generate a slice that would contain every profitable trade for the data set given to it and one to find the single most profitable trade.
 
