@@ -109,6 +109,6 @@ The task was to find the most profitable trade from a series of numbers where th
 
 I decided to create two methods, one to generate a slice that would contain every profitable trade for the data set given to it and one to find the single most profitable trade.
 
-Finding the profitable trades could of been implemented into a go routine to iterate of the data in threads faster but I decided to leave it simple as the benchmarks were quite fast with the data set given and the extra complexity was not really needed. 
+Finding the profitable trades could of been implemented into a go routine to iterate over the data in a go routine faster but I decided to leave it simple as the benchmarks were quite fast with the data set given and the extra complexity was not really needed. 
 
 As a bonus I added a method to calculate the profit made on all profitable trades.
