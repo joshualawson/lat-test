@@ -25,7 +25,7 @@ func TestProfitable(t *testing.T) {
 		[]int{8, 9},
 	}
 
-	assert.Equal(t, ProfitableTrades(i), profitableTrades, "The slices should match")
+	assert.Equal(t, profitableTrades, ProfitableTrades(i), "The slices should match")
 }
 
 // BenchmarkProfitable1 benchmark tests for Profitable
@@ -59,7 +59,7 @@ func TestMaxProfit(t *testing.T) {
 		[]int{8, 9},
 	}
 
-	assert.Equal(t, MaxProfit(profitable), 11-5, "Max profit should be 11-5")
+	assert.Equal(t, 11-5, MaxProfit(profitable), "Max profit should be 11-5")
 }
 
 // TestMaxProfitFromProfitable tests MaxProfit using the Profitable data
@@ -68,7 +68,7 @@ func TestMaxProfitFromProfitable(t *testing.T) {
 		10, 7, 5, 8, 11, 9,
 	}
 
-	assert.Equal(t, MaxProfit(ProfitableTrades(i)), 11-5, "Max profit should be 11-5")
+	assert.Equal(t, 11-5, MaxProfit(ProfitableTrades(i)), "Max profit should be 11-5")
 }
 
 // BenchmarkMaxProfit1 benchmark tests for MaxProfit
@@ -129,5 +129,5 @@ func TestTotalMaxProfit(t *testing.T) {
 		10, 7, 5, 8, 11, 9,
 	}
 
-	assert.Equal(t, TotalMaxProfit(ProfitableTrades(i)), 25)
+	assert.Equal(t, 25, TotalMaxProfit(ProfitableTrades(i)))
 }
